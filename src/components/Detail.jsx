@@ -12,7 +12,7 @@ const Detail = ({ url }) => {
 
     return (
         <div>
-            <p>Color: <b style={{color:"red"}}>{detail.color?.name}</b> cm</p>
+            <p>Color: <b style={{color:"red"}}>{detail.color?.name}</b></p>
             <p>Forma: <b style={{color:"red"}}>{detail.shape?.name}</b></p>
             <p>Habita: <b style={{color:"red"}}>{detail.habitat?.name}</b></p>
            

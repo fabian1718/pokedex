@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <div className='header'>
             <div onClick={back} className='back'>
-                <i class="fa-solid fa-chevron-left"></i>
+                <i className="fa-solid fa-chevron-left"></i>
                 <p>regresar</p>
             </div>
             <div className='back'>

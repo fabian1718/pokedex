@@ -28,9 +28,10 @@ const Pokedex = () => {
                 .then(res => setTypeList(res.data.results))
     },[])
 
+    const elementSearch = inputValue.toLowerCase()
 
     const shearchPokemon = () => {
-        navigate(`/pokedex/${inputValue}`)
+            navigate(`/pokedex/${elementSearch}`)
     }
 
     const shearchType = (typeUrl) => {
@@ -44,7 +45,6 @@ const Pokedex = () => {
     const secondIndex = page * cantPokemones;
     const firtIndex = secondIndex - cantPokemones;
 
-
     const pagesPokemones = pokemones.slice(firtIndex, secondIndex); // paginacion
     
     const totalPages = Math.ceil(pokemones.length / cantPokemones); // redonde para aboajo
@@ -52,8 +52,7 @@ const Pokedex = () => {
     const pagesNumbers = [];
 
     for (let i = 1; i < totalPages; i++) {
-        pagesNumbers.push(i)
-        
+            pagesNumbers.push(i)
     }
 
     return (
@@ -70,12 +69,14 @@ const Pokedex = () => {
                         disabled = { page ===1 }                
                         >
                             anterior
+
                         </button>
                         {
                             pagesNumbers.map(page => (
-                                <button onClick={() => setPage(page)}>{page}</button>
+                                    <button className='btn-page' onClick={() => setPage(page)}>{page}</button>
                             ))
                         }
+
                     <button 
                         onClick={() =>setPage(page+1)}
                         disabled = { page ===  totalPages}

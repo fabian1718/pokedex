@@ -18,8 +18,6 @@ const PokemonCard = ({ url }) => {
         navigate(`/pokedex/${pokemon.id}`)
     }
 
-    console.log(pokemon)
-
     return (
         <div className='card' onClick={toGoDetail}>
             <img className='img-card' src={pokemon.sprites?.other.dream_world.front_default} alt="" />

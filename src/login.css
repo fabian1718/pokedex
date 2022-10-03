@@ -1,0 +1,88 @@
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    color: red;
+}
+
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.container-img-login{
+    background: rgb(52, 50, 50);
+    display: flex;
+    justify-content: center;
+}
+
+.container-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-login{
+    width: 60%;
+}
+
+.btn-login{
+    border: none;
+    font-size:medium;
+    color: white;
+    cursor: pointer;
+    background: goldenrod;
+    height: 30px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    width: 60%;
+}
+
+.btn-login:hover{
+    color: orange;
+    background-color: rgb(121, 121, 121);
+    width: 62%;
+}
+
+.input-login{
+    height: 30px;
+    width: 50%;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+}
